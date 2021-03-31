@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/css/table.css">  
+</head>
+<body>
+    <div class ="container">
+        <div class="header">
+            <h2 style="text-align:center">PRODUCT DETAILS</h2>
+        </div>
+        <span></span>
+    <form class="form" action="/views/login.html" id="form">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>PRODUCT NAME</th>
+            <th>BRAND</th>
+            <th>PRICE</th>
+            
+        </tr>
+        <% if(userdata.length!=0){ %>
+        
+            <% userdata.forEach((data)=> { %>
+               
+                <tr>
+        
+                <td><%=data.id %></td>
+                <td><%=data.productname %></td>
+                <td><%=data.brand %></td>
+                <td><%=data.price %></td>
+                
+                
+
+                </tr>
+           
+           <% }) %>
+
+
+        <% } else{ %>
+        <tr>
+            <td colspan="5">No data found</td>
+        </tr>
+    <% } %>
+    </table>
+    <br>
+    <center>
+    <button>LOGOUT</button>
+    </center>
+    </form>
+    </div>
+</body>
+</html>

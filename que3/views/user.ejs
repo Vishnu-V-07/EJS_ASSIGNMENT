@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/css/table.css">  
+</head>
+<body>
+    <div class ="container">
+        <div class="header">
+            <h2 style="text-align:center">STUDENT MARKSHEET</h2>
+        </div>
+        <span></span>
+    <form class="form" action="/views/login.html" id="form">
+        <center>
+    <table >
+        <tr>
+            <th>Si.no</th>
+            <th>Country name</th>
+            <th>High</th>
+            <th>Low</th>
+            
+        </tr>
+        <% if(userdata.length!=0){ %>
+            <%var i=1; %>
+            <% userdata.forEach((data)=> { %>
+               
+                <tr>
+                <td><%=i; %></td>
+                <td><%=data.country %></td>
+                <td><%=data.high %></td>
+              
+                <td><%=data.low %></td>
+                
+
+                </tr>
+                <% i++; %>
+           <% }) %>
+
+
+        <% } else{ %>
+        <tr>
+            <td colspan="9">No data found</td>
+        </tr>
+    <% } %>
+    </table>
+</center>
+    <br>
+    <center>
+    <button>LOGOUT</button>
+    </center>
+    </form>
+    </div>
+</body>
+</html>

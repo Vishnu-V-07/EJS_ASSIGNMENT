@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    
+    <head>
+        <title>Product</title>
+    
+        <link rel="stylesheet" type="text/css" href="/public/css/signup.css">
+        <script src="https://kit.fontawesome.com/a43c0f77ad.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class ="container">
+    <div class="header">
+        <h2>Product Details Sheet</h2>
+   </div>
+   
+    <form class="form" action='/entry' id="form" method="POST">
+    <table>
+      
+    <tr>
+            <td>id: </td><td>
+            <div class="form-control">
+            <input type="text" placeholder="product id" id="id" name="id">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+        
+            <td>product name:</td>
+            <td><div class="form-control">
+            <input type="text" placeholder="product name" id="product name" name="productname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+       
+            <td>Brand:</td>
+            <td><div class="form-control">
+            <input type="text" placeholder="Brand" id="Brand" name="Brand">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    <tr>
+       
+            <td>price</td>
+            <td> <div class="form-control">
+            <input type="text" placeholder="price" id="price" name="price">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small></td>
+        </div>
+    </tr>
+    
+   
+    
+</table> 
+<button>Submit</button>        
+ </form> 
+
+</div>
+<script src="/public/js/admin_marksheet entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/css/signup.css">
+        <script src="https://kit.fontawesome.com/a43c0f77ad.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class ="container">
+    <div class="header">
+        <h2>CITY DETAILS</h2>
+    </div>
+    <form class="form" action='/validate' id="form" method="POST">
+        <div class="form-control">
+         <input type="text" placeholder="CITY" id="username"  name="username">
+         <i class="fas fa-check-circle"></i>
+         <i class="fas fa-exclamation-circle"></i>
+         <small>Error message</small>
+        </div>
+        <div class="form-control">
+         <input type="text" placeholder="Range" id="Rollnum" name="Rollnum">
+         <i class="fas fa-check-circle"></i>
+         <i class="fas fa-exclamation-circle"></i>
+         <small>Error message</small>
+        </div>
+        <button >Login</button><br><br>
+         Don't have an account ? <a href="/views/signup.html">Sign up</a><br><br>
+         forgot password ? <a href="/views/Forgotpassword.html">Click here</a><br>
+         <script src="/public/js/login.js"></script>
+    </form>
+</div>
+</body>
+</html>
