@@ -21,7 +21,8 @@ Create a dynamic page to display the details of the products with the Product na
 3.	Consider the Temperature Range table given below,
 
 
-        ![image](https://user-images.githubusercontent.com/74828702/113177848-9726f200-926b-11eb-9e97-cada28fc8c48.png)
+     ![image](https://user-images.githubusercontent.com/74828702/113178155-ebca6d00-926b-11eb-92cf-44509142ab1d.png)
+
 
  
 Create a dynamic page to display the country name, high and low values in the table using EJS.
